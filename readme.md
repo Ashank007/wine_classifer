@@ -4,7 +4,7 @@
 This project is a **Wine Quality Classifier** built using an **Artificial Neural Network (ANN)**. The classifier predicts the quality of wine based on its chemical properties. The model achieves an accuracy of **84%** and was trained with **133,857 parameters**. 
 
 ## Dataset
-The dataset used in this project consists of **13 features** that represent the chemical properties of wine. These features are:
+The dataset used in this project consists of **11 features** that represent the chemical properties of wine. These features are:
 
 - **Fixed Acidity**: Non-volatile acids involved in wine stability.
 - **Volatile Acidity**: Acetic acid in wine that leads to an unpleasant vinegar taste.
@@ -25,7 +25,7 @@ The model is built using an **Artificial Neural Network (ANN)**.
 ### Key Details:
 - **Parameters**: 133,857
 - **Layers**: 
-  - **Input Layer**: 13 neurons (one for each feature)
+  - **Input Layer**: 11 neurons (one for each feature)
   - **Hidden Layers**: Fully connected layers with appropriate activation functions
   - **Output Layer**: Neurons for classification
 - **Activation Functions**: 
