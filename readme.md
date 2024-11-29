@@ -63,11 +63,10 @@ Ensure that Python 3.7 or later is installed on your system.
     pip install -r requirements.txt
 
 ## Dataset Preprocessing
-
-1. The dataset was preprocessed using the following steps:
-2. Checked for missing values and outliers.
-3. Scaled the features using MinMaxScaler to normalize the data.
-4. Split the dataset into training and test sets (80:20 ratio).
+The dataset was preprocessed using the following steps:
+1. Checked for missing values and outliers.
+2. Scaled the features using MinMaxScaler to normalize the data.
+3. Split the dataset into training and test sets (80:20 ratio).
 
 ## Results
 1. The model was evaluated on the test set and achieved:
