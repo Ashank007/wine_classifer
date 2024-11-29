@@ -55,7 +55,7 @@ Ensure that Python 3.7 or later is installed on your system.
 ### Installation
 1. Clone this repository:
    ```bash
-   git clone <[repository_url](https://github.com/Ashank007/wine_classifer)>
+   git clone <https://github.com/Ashank007/wine_classifer>
 
 2. Navigate to the project directory:
     cd wine-classifier
