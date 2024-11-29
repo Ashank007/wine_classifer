@@ -30,7 +30,7 @@ The model is built using an **Artificial Neural Network (ANN)**.
   - **Output Layer**: Neurons for classification
 - **Activation Functions**: 
   - **Hidden layers**: ReLU (Rectified Linear Unit)
-  - **Output layer**: Softmax (for multi-class classification)
+  - **Output layer**: Sigmoid
 
 ### Training
 - **Loss Function**: Categorical Crossentropy
