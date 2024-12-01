@@ -58,9 +58,16 @@ Ensure that Python 3.7 or later is installed on your system.
    git clone <https://github.com/Ashank007/wine_classifer>
 
 2. Navigate to the project directory:
+   ```bash
     cd wine-classifier
+
 3. Install the required dependencies:
+    ```bash
     pip install -r requirements.txt
+
+4. Run the Project
+    ```bash
+    streamlit run wineclassifer.py
 
 ## Dataset Preprocessing
 The dataset was preprocessed using the following steps:
