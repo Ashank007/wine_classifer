@@ -1,7 +1,7 @@
 import streamlit as st
 from tensorflow.keras.models import load_model
 import numpy as np
-
+import os
 @st.cache_resource
 def load_trained_model():
     model_path = "/workspaces/wine_classifer/wine-classifier.keras"
