@@ -2,8 +2,14 @@ import streamlit as st
 from tensorflow.keras.models import load_model
 import numpy as np
 
+@st.cache_resource
+def load_trained_model():
+    model_path = "/home/ashank/Desktop/PROGRAMS/PYTHON/streamlit/dogs-cats-classifier/cats-dogs-classification.keras"  
+    model = load_model(model_path)
+    return model
+
+model = load_trained_model()
 st.title("Wine Quality Classifier")
-model = load_model('wine-classifier.keras')
 
 def number_input(label):
     value = st.text_input(label, "")
