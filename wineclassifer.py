@@ -4,7 +4,9 @@ import numpy as np
 
 @st.cache_resource
 def load_trained_model():
-    model_path = "/workspaces/wine_classifer/wine-classifier.keras"  
+    model_path = "/workspaces/wine_classifer/wine-classifier.keras"
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"Model file not found at {model_path}")
     model = load_model(model_path)
     return model
 
