@@ -4,7 +4,7 @@ import numpy as np
 
 @st.cache_resource
 def load_trained_model():
-    model_path = "/home/ashank/Desktop/PROGRAMS/PYTHON/streamlit/dogs-cats-classifier/cats-dogs-classification.keras"  
+    model_path = "/workspaces/wine_classifer/wine-classifier.keras"  
     model = load_model(model_path)
     return model
 
