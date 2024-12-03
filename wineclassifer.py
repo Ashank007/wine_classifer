@@ -1,10 +1,19 @@
 import streamlit as st
 from tensorflow.keras.models import load_model
 import numpy as np
+import os
 
+@st.cache_resource
+def load_trained_model():
+    model_path = os.path.abspath("/workspaces/wine_classifer/wine-classifier.keras")
+    if not os.path.exists(model_path):
+        raise FileNotFoundError(f"Model file not found at {model_path}")
+    
+    model = load_model(model_path)
+    return model
+
+model = load_trained_model()
 st.title("Wine Quality Classifier")
-model = load_model('wine-classifier.keras')
-
 def number_input(label):
     value = st.text_input(label, "")
     try:
